@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var isSavedEvent:Bool = false
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 234.0/255.0, green: 46.0/255.0, blue: 73.0/255.0, alpha: 1.0)
+
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        
+        Parse.enableLocalDatastore()
+        
+        Parse.setApplicationId("hrXhVSuQSQg4L8fe8qch35XG7gqZNcfNPEyExQwX", clientKey: "dJSHvlMyKcvg7MVdKcJDnAzhVc3NM2l08tQC5HVw")
+        
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+
         return true
     }
 

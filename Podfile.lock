@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (3.5.1)
+  - AlamofireImage (2.3.1):
+    - Alamofire (~> 3.2)
+  - Bolts/Tasks (1.8.4)
+  - Parse (1.13.0):
+    - Bolts/Tasks (~> 1.6)
+  - SVProgressHUD (2.0.3)
+  - SwiftDate (2.0.2)
+
+DEPENDENCIES:
+  - AlamofireImage (~> 2.3.0)
+  - Parse (~> 1.13.0)
+  - SVProgressHUD (from `https://github.com/rvishal1991/SVProgressHUD.git`, branch
+    `master`)
+  - SwiftDate (~> 2.0.2)
+
+EXTERNAL SOURCES:
+  SVProgressHUD:
+    :branch: master
+    :git: https://github.com/rvishal1991/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: 125290f0b196edd60c3e49e8a4f9f8e255d418b6
+    :git: https://github.com/rvishal1991/SVProgressHUD.git
+
+SPEC CHECKSUMS:
+  Alamofire: 0dfba1184a543e2aa160f4e39cac4e8aba48d223
+  AlamofireImage: e52336282757bbe1644f075d6cb85f19c891f939
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
+  SVProgressHUD: 7b816bb306ad20c5d7f3d60677beab4d30a2397d
+  SwiftDate: b4f4d0962afe48365ad2800c9850a6626deb9359
+
+COCOAPODS: 0.39.0
